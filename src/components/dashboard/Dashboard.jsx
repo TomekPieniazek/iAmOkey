@@ -6,7 +6,7 @@ import { AppContext } from '../../context/app.context';
 
 const Dashboard = () => {
     // TO PRZENOSIMY DO  CONTEXTU -> W DASHBOARD JEST JEDNA FUNKCJA, KTÓRA USTAWIA LINK DLA WYBRANEGO SLIDE'U
-   const { setLink, boxColor, setBoxColor } = useContext(AppContext);
+   const { setLink, boxColor, setBoxColor,currentOrder, setOrder } = useContext(AppContext);
 
    const setImage = (e) => {
     const imageNumber = e.target.name;
@@ -29,6 +29,18 @@ const Dashboard = () => {
             [boxNumber]: newColor
         }));
     }
+
+    const handleOrderChange = (e) => {
+        const bNumber = e.target.name;
+        const nValue = e.target.value;
+
+        setOrder(prevState => ({
+            ...prevState,
+            [bNumber]: parseInt(nValue, 10) 
+        }));
+    }
+
+    
 
     
 
@@ -131,6 +143,33 @@ const Dashboard = () => {
                             value={boxColor[3]}
                             onChange={handleColorChange}                        
                         />
+
+                        <h4>Order Changer</h4>
+                        <input
+                            type='number'
+                            id='1'
+                            name='1'
+                            className='orderPicker'
+                            value={currentOrder[1]}
+                            onChange={handleOrderChange}
+                        />
+                        <input
+                            type='number'
+                            id='2'
+                            name='2'
+                            className='orderPicker'
+                            value={currentOrder[2]}
+                            onChange={handleOrderChange}
+                        />
+                        <input
+                            type='number'
+                            id='3'
+                            name='3'
+                            className='orderPicker'
+                            value={currentOrder[3]}
+                            onChange={handleOrderChange}
+                        />
+
                     </div>
                 </div>
             </div>

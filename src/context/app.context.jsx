@@ -15,11 +15,16 @@ export const AppContextProvider = ({ children }) => {
         2: '#ffffff',
         3: '#ffffff'
     })
+    const [currentOrder, setOrder] = useState({
+        1: 1,
+        2: 2,
+        3: 3
+    })
 
 
     
     return (
-        <AppContext.Provider value={{ link, setLink, boxColor, setBoxColor }}>
+        <AppContext.Provider value={{ link, setLink, boxColor, setBoxColor, currentOrder, setOrder }}>
             { children }
         </AppContext.Provider>
     )
