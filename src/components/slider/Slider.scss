@@ -1,0 +1,22 @@
+.slider-container {
+    .slide {
+        height: 400px;
+        border-radius: 6px;
+
+        .legend {
+            font-size: 24px !important;
+        }
+    }
+    .slide-1 {
+        background: rgb(63,81,181);
+        background: linear-gradient(90deg, rgba(63,81,181,1) 35%, rgba(30,136,229,1) 100%); 
+    }
+    .slide-2 {
+        background: rgb(100,221,23);
+        background: linear-gradient(90deg, rgba(100,221,23,1) 35%, rgba(118,255,3,1) 100%);
+    }
+    .slide-3 {
+        background: rgb(171,71,188);
+        background: linear-gradient(90deg, rgba(171,71,188,1) 35%, rgba(206,147,216,1) 100%);
+    }
+}

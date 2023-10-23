@@ -1,0 +1,53 @@
+@import './../../colors.scss';
+@import './../../mixins.scss';
+
+.dashboard-container {
+    max-width: 1200px;
+    width: 100%;
+    background: $black;
+    margin: 0 auto;
+
+    .color-picker,
+    .colorPicker {
+      appearance: none;
+      width: 80px;
+      height: 80px;
+      border: none;
+  
+      background-color: transparent;
+      cursor: pointer;
+  
+      &::-webkit-color-swatch {
+        border-radius: 15px;
+        border: 2px solid black;
+      }
+    }
+  
+
+    .section-settings {
+        padding: 20px;
+
+        .title {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+
+            h2 {
+                color: white;
+                font-size: 20px;
+            }
+
+            button {
+                border: none;
+                margin-left: 20px;
+                margin-top: 4px;
+                cursor: pointer;
+                background: #4DD0E1;
+
+                &:hover {
+                    background: #80DEEA;
+                }
+            }
+        }
+    }
+}
