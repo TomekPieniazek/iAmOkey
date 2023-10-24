@@ -6,7 +6,17 @@ import { AppContext } from '../../context/app.context';
 
 const Dashboard = () => {
     // TO PRZENOSIMY DO  CONTEXTU -> W DASHBOARD JEST JEDNA FUNKCJA, KTÓRA USTAWIA LINK DLA WYBRANEGO SLIDE'U
-   const { setLink, boxColor, setBoxColor,currentOrder, setOrder } = useContext(AppContext);
+   const { setLink, boxColor, setBoxColor,currentOrder, setOrder, footerText, setFooter } = useContext(AppContext);
+
+    const setFooterText = (e) => {
+        const fNumber = e.target.name;
+        const fValue = e.target.value;
+
+        setFooter(prevState => ({
+            ...prevState,
+            [fNumber]: fValue
+        }));
+    }
 
    const setImage = (e) => {
     const imageNumber = e.target.name;
@@ -168,6 +178,14 @@ const Dashboard = () => {
                             className='orderPicker'
                             value={currentOrder[3]}
                             onChange={handleOrderChange}
+                        />
+                        <input
+                            type='text'
+                            id='1'
+                            name='1'
+                            className='picker'
+                            value={footerText[1]}
+                            onChange={setFooterText}
                         />
 
                     </div>

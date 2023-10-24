@@ -1,9 +1,15 @@
 import './Footer.scss';
+import { AppContext } from '../../context/app.context';
+import { useContext } from 'react';
 
 const Footer = () => {
+
+    const { footerText } = useContext(AppContext)
+
+
     return(
         <div className="footer-container container">
-            <h2>Made by <span>#TechniSchools</span></h2>
+            <h2>{ footerText[1] }</h2>
         </div>
     )
 }
