@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect, useContext } from 'react';
 import { AppContext } from '../../context/app.context';
 
-
 const Dashboard = () => {
     // TO PRZENOSIMY DO  CONTEXTU -> W DASHBOARD JEST JEDNA FUNKCJA, KTÓRA USTAWIA LINK DLA WYBRANEGO SLIDE'U
    const { setLink, boxColor, setBoxColor,currentOrder, setOrder, footerText, setFooter } = useContext(AppContext);
@@ -125,7 +124,6 @@ const Dashboard = () => {
                     ></input>
 
                     <div className="color-picker">
-                        <h2>Box color picker</h2>
                         <h4>Box one</h4>
                         <input
                             type="color"
@@ -179,6 +177,7 @@ const Dashboard = () => {
                             value={currentOrder[3]}
                             onChange={handleOrderChange}
                         />
+                        <h4>Footer text changer</h4>
                         <input
                             type='text'
                             id='1'
@@ -187,7 +186,6 @@ const Dashboard = () => {
                             value={footerText[1]}
                             onChange={setFooterText}
                         />
-
                     </div>
                 </div>
             </div>

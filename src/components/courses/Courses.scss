@@ -1,3 +1,9 @@
+$primary: #BA1200;
+$dark: #031927;
+$lightBlue: #9DD1F1;
+$mediumBlue: #508AA8;
+$veryLightBlue: #C8E0F4;
+
 .courses {
     display: flex;
     flex-direction: column;
@@ -9,11 +15,15 @@
         h2 {
             font-size: 16px;
             text-align: center;
-            background: pink;
-            color: white;
+            background: $primary;
+            color: $dark;
             padding: 6px 10px;
             border-radius: 3px;
             display: inline-block;
+        }
+
+        p {
+            color: $mediumBlue;
         }
     }
 }

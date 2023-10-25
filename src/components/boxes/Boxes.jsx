@@ -3,41 +3,39 @@ import { useContext } from 'react';
 import { AppContext } from '../../context/app.context';
 
 const Boxes = () => {
-
-
     const { boxColor } = useContext(AppContext)
 
     return(
         <div style={{backgroundColor: boxColor[2]}} id="boxes" className="container">
             <div className="boxes">
                 <div className="box">
-                    <h2>Kurs HTML</h2>
+                    <h2>Historia socjalizmu</h2>
                     <ul>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
+                        <li>Początki w XIX wieku</li>
+                        <li>Revolucja październikowa</li>
+                        <li>Upadek Związku Radzieckiego</li>
+                        <li>Wpływ na gospodarkę</li>
+                        <li>Skutki dla społeczeństwa</li>
                     </ul>
                 </div>
                 <div className="box">
-                    <h2>Kurs CSS</h2>
+                    <h2>Problemy socjalizmu</h2>
                     <ul>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
+                        <li>Brak motywacji do pracy</li>
+                        <li>Centralne planowanie</li>
+                        <li>Brak wolności gospodarczej</li>
+                        <li>Ograniczenia wolności obywatelskich</li>
+                        <li>Kryzysy gospodarcze</li>
                     </ul>
                 </div>
                 <div className="box">
-                    <h2>Kurs JavaScript</h2>
+                    <h2>Alternatywy dla socjalizmu</h2>
                     <ul>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
-                        <li>Lorem ipsum</li>
+                        <li>Kapitalizm</li>
+                        <li>Liberalizm gospodarczy</li>
+                        <li>Wolny rynek</li>
+                        <li>Demokracja</li>
+                        <li>Wolność jednostki</li>
                     </ul>
                 </div>
             </div>

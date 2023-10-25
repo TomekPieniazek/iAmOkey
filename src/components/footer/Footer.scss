@@ -1,7 +1,11 @@
-@import './../../colors.scss';
+$primary: #BA1200;
+$dark: #031927;
+$lightBlue: #9DD1F1;
+$mediumBlue: #508AA8;
+$veryLightBlue: #C8E0F4;
 
 .footer-container {
-    background: $blackWashy;
+    background: $dark;
     display: flex;
     justify-content: space-between;
     height: 70px;
@@ -11,10 +15,10 @@
         margin: 0;
         display: flex;
         align-items: center;
-        color: white;
+        color: $lightBlue;
 
         span {
-            color: $techniColor;
+            color: $primary;
             margin-left: 6px;
         }
     }

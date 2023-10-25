@@ -1,8 +1,13 @@
-@import './../../colors.scss';
+$primary: #BA1200;
+$dark: #031927;
+$lightBlue: #9DD1F1;
+$mediumBlue: #508AA8;
+$veryLightBlue: #C8E0F4;
+
 @import './../../mixins.scss';
 
 .header-container {
-    background: $black;
+    background: $dark;
     display: flex;
     justify-content: space-between;
     position: sticky;
@@ -14,13 +19,13 @@
 
     .logo {
         font-size: 20px;
-        color: white;
+        color: $lightBlue;
 
         span {
-            color: $gold;
+            color: $primary;
 
             @include tablet {
-                color: red;
+                color: $mediumBlue;
             }
         }
     }
@@ -30,15 +35,15 @@
 
         a {
             padding: 24px 20px;
-            color: white;
+            color: $lightBlue;
             text-decoration: none;
-            border-top: 2px solid $black;
-            border-bottom: 2px solid $black;
+            border-top: 2px solid $dark;
+            border-bottom: 2px solid $dark;
 
             &:hover {
-                color: $gold;
-                border-top: 2px solid $white;
-                border-bottom: 2px solid $white;
+                color: $primary;
+                border-top: 2px solid $lightBlue;
+                border-bottom: 2px solid $lightBlue;
             }
         }
     }

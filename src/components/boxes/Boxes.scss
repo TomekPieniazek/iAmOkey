@@ -1,12 +1,18 @@
 @import './../../colors.scss';
 
+$primary: #BA1200;
+$dark: #031927;
+$lightBlue: #9DD1F1;
+$mediumBlue: #508AA8;
+$veryLightBlue: #C8E0F4;
+
 .boxes {
     display: flex;
 
     .box {
         padding: 20px 10px;
         margin: 10px;
-        background: $blueLight;
+        background: $veryLightBlue;
         flex-grow: 1;
         border-radius: 6px;
         width: 100%;
@@ -14,8 +20,8 @@
         h2 {
             font-size: 16px;
             text-align: center;
-            background: $pink;
-            color: white;
+            background: $primary;
+            color: $dark;
             padding: 6px 10px;
             border-radius: 3px;
         }
@@ -26,6 +32,7 @@
             li {
                 padding: 10px;
                 list-style-type: "\1F44D  ";
+                color: $mediumBlue;
             }
         }
     }

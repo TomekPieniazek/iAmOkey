@@ -8,10 +8,10 @@ const Header = () => {
 
     return(
         <div style={{backgroundColor: boxColor[3]}} className="header-container container">
-            <h1 className="logo">#<span>KURSY</span>_online</h1>
+            <h1 className="logo">#<span>Wolność</span>_Przeciwko_Lewakom</h1>
             <ul className="menu">
-                <li><a href="#boxes">Oferta</a></li>
-                <li><a href="#courses">Kursy</a></li>
+                <li><a href="#boxes">Historia</a></li>
+                <li><a href="#courses">Problemy</a></li>
             </ul>
         </div>
     )
