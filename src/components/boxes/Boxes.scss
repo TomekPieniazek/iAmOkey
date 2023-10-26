@@ -8,6 +8,7 @@ $veryLightBlue: #C8E0F4;
 
 .boxes {
     display: flex;
+    flex-wrap: wrap;
 
     .box {
         padding: 20px 10px;
@@ -34,6 +35,14 @@ $veryLightBlue: #C8E0F4;
                 list-style-type: "\1F44D  ";
                 color: $mediumBlue;
             }
+        }
+
+        @media (max-width: 768px) {
+            flex-basis: calc(50% - 20px);  
+        }
+
+        @media (max-width: 480px) {
+            flex-basis: 100%;  
         }
     }
 }

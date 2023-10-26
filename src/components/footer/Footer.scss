@@ -22,4 +22,14 @@ $veryLightBlue: #C8E0F4;
             margin-left: 6px;
         }
     }
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px;
+        
+        h2 {
+            margin-bottom: 10px;
+        }
+    }
 }

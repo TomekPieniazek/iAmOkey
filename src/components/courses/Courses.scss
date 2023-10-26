@@ -25,5 +25,8 @@ $veryLightBlue: #C8E0F4;
         p {
             color: $mediumBlue;
         }
+        @media (max-width: 480px) {
+            text-align: center;
+        }
     }
 }
