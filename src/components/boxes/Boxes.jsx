@@ -1,8 +1,9 @@
 import './Boxes.scss';
-import { useContext } from 'react';
 import { AppContext } from '../../context/app.context';
+import { useContext } from 'react';
 
 const Boxes = () => {
+
     const { boxColor } = useContext(AppContext)
 
     return(

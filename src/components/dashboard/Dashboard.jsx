@@ -18,18 +18,22 @@ const Dashboard = () => {
 
    const setFooterText = (e) => {
        setFooter(prev => ({ ...prev, [e.target.name]: e.target.value }));
+       localStorage.setItem('footerText', JSON.stringify(e.target.value));
    }
 
    const setImage = (e) => {
        setLink(prev => ({ ...prev, [e.target.name]: e.target.value }));
+       localStorage.setItem('link', JSON.stringify(e.target.value));
    }
 
    const handleColorChange = (e) => {
        setBoxColor(prev => ({ ...prev, [e.target.name]: e.target.value }));
+       localStorage.setItem('boxColor', JSON.stringify(e.target.value));
    }
 
    const handleOrderChange = (e) => {
        setOrder(prev => ({ ...prev, [e.target.name]: parseInt(e.target.value, 10) }));
+       localStorage.setItem('currentOrder', JSON.stringify(e.target.value));
    }
 
    const LogOut = () => {

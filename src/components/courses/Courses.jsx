@@ -5,7 +5,7 @@ import { AppContext } from '../../context/app.context';
 const Courses = () => {
 
     const { boxColor } = useContext(AppContext)
-    const { currentOrder, setOrder } = useContext(AppContext)
+    const { currentOrder } = useContext(AppContext)
 
     return(
         <div style={{backgroundColor: boxColor[1]}} id="courses" className="container">
